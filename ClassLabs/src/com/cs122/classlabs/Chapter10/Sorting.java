@@ -22,7 +22,11 @@ public class Sorting<T>
             min = index;
             for (int scan = index+1; scan < list.length; scan++)
                 if (list[scan].compareTo((T)list[min]) < 0)
-                    min = scan;
+                {
+                	System.out.println(list[scan].compareTo((T)list[min])+"  select");
+                	min = scan;
+                }
+                    
 
             // Swap the values
             temp = list[min];
@@ -45,6 +49,7 @@ public class Sorting<T>
             //  Shift larger values to the right
             while (position > 0 && key.compareTo((T)list[position-1]) < 0)
             {
+            	System.out.println(key.compareTo((T)list[position-1])+"  ins");
                 list[position] = list[position-1];
                 position--;
             }
@@ -53,25 +58,3 @@ public class Sorting<T>
         }
     }
 }
-]
-		
-		
-		
-		
-4,3,6,1,5,2
-
-6,/3,4,1,5,2
-6,5,/4,1,3,2
-6,5,4,/1,3,2
-6,5,4,3,/1,2
-6,5,4,3,2,/1
-
-
-
-
-
-
-1,3,6,4,5,2
-1,2,6,4,5,3
-1,2,3,4,5,6
-

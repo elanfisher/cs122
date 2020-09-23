@@ -1,3 +1,4 @@
+package com.cs122.classlabs.Chapter10;
 //********************************************************************
 //  Searching.java       Author: Lewis/Loftus
 //
@@ -49,8 +50,12 @@ public class Searching<T>
                 found = true;
             else
                 if (target.compareTo((T)list[mid]) < 0)
+                {
+                	System.out.println(target.compareTo((T)list[mid])+"max");
                     max = mid-1;
+                }
                 else
+                	System.out.println(target.compareTo((T)list[mid])+"min");
                     min = mid+1;
         }
 

@@ -45,9 +45,13 @@ public class Contact implements Comparable<Contact>
         int result;
 
         if (lastName.equals(other.getLastName()))
-            result = firstName.compareTo(other.getFirstName());
+        {
+        	result = firstName.compareTo(other.getFirstName());
+            System.out.println("first: "+firstName+" "+result);
+        }
         else
             result = lastName.compareTo(other.getLastName());
+        System.out.println("last: "+lastName+" "+result);
 
         return result;
     }
