@@ -11,6 +11,11 @@ public class Programming
 		 * - have 6 students assigned id and name
 		 *  -- sort them and find a student with an id that is present and not present
 		 */	
+		
+		//System.out.println(args[0]);
+		
+		//Students.printMe();
+		
 		Students[] studentList = new Students[6];
 		Random rand = new Random();
 		
@@ -35,6 +40,7 @@ public class Programming
 		{	
 			System.out.println(student); 
 		}
+		
 		
 	}
 }

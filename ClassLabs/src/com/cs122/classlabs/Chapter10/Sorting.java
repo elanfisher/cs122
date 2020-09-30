@@ -58,3 +58,9 @@ public class Sorting<T>
         }
     }
 }
+
+//<<<<<<< HEAD
+//=======
+//
+//
+//>>>>>>> branch 'master' of https://github.com/elanfisher/cs122.git

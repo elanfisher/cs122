@@ -1,4 +1,8 @@
 package com.cs122.classlabs.Chapter10;
+//<<<<<<< HEAD
+//=======
+//
+//>>>>>>> branch 'master' of https://github.com/elanfisher/cs122.git
 //********************************************************************
 //  Searching.java       Author: Lewis/Loftus
 //

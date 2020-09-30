@@ -6,6 +6,15 @@ public class Students implements Comparable<Students>
 	 * create a class called Students with properties `uid(integer) and name(String)
 	create a class called Programming - have 6 students assigned id and name -- sort them and find a student with an id that is present and not present
 	 */
+	public static void printMe() {
+		System.out.println("Test");
+	}
+	
+	
+	public void showMe()
+	{
+		System.out.println("somthing else");
+	}
 	
 	private int uid;
 	private String name;
