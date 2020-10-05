@@ -28,8 +28,12 @@ public class CreatingExceptions
         int value = scan.nextInt();
 
         //  Determine if the exception should be thrown
+        try {
         if (value < MIN || value > MAX)
-            throw problem;
+            throw new OutOfRangeException("Error");}
+        catch (Exception e){
+        	System.out.println("yayyy I caught it!");
+        }
 
         System.out.println("End of main method.");  // may never reach
     }
