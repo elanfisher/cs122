@@ -19,7 +19,7 @@ public class ExampleDriver {
 		Scanner scanner = new Scanner(System.in);
 		
 		/* Get input from user about what flag to draw
-		 */
+		
 		System.out.println("Type the number corresponding to the name:  ");
 		System.out.println("1 Indonesia");
 		System.out.println("2 Lithuania");
@@ -38,10 +38,11 @@ public class ExampleDriver {
 			size = 4;
 			choice = 99;
 		}
+		*/
 		/* Create drawing grid of the height requested */
-		MyGrid grid = new MyGrid(size);
+		MyGrid grid = new MyGrid(10);
 
 		/* Draw the letter on the grid */
-		FlagMaker.drawFlag(grid, choice);
+		FlagMaker.drawFlag(grid, 7);
 	}
 }

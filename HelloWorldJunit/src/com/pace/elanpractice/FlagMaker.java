@@ -107,5 +107,33 @@ public class FlagMaker {
 			}
 			
 		}
+		if (countryCode == 7)
+		{
+			for(int row = 0; row < height; row = row + 1)
+			{
+				for(int col = 0; col < width; col = col + 1)
+				{
+					grid.setColor(row, col, Color.RED);
+				}
+			}
+			
+			for (int row = 0; row < height; row = row + 1) 
+			{
+                for (int col = (2 * row); col < (2*row)+2; col = col + 1) 
+                {
+                    grid.setColor(row, col, Color.ORANGE);
+                }
+            }
+			
+			System.out.println(width);
+			System.out.println(height);
+			for (int row = 0; row < height; row = row + 1) 
+			{
+                for (int col = width - (2 * row)-1; col >= width - (2*row)-2; col = col - 1)
+                {
+                    grid.setColor(row, col, Color.ORANGE);
+                }
+            }
+		}
 	}	
 }

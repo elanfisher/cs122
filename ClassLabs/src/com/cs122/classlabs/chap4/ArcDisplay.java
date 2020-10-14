@@ -31,7 +31,7 @@ public class ArcDisplay extends Application
         Arc arc1 = new Arc(250, 150, 170, 100, 90, 90);
         arc1.setType(ArcType.OPEN);
         arc1.setStroke(Color.RED);
-        arc1.setFill(null);
+        arc1.setFill(Color.rgb(0, 0, 0));
         
         Arc arc2 = new Arc(250, 150, 170, 100, 20, 50);
         arc2.setType(ArcType.ROUND);
@@ -42,6 +42,7 @@ public class ArcDisplay extends Application
         arc3.setType(ArcType.CHORD);
         arc3.setStroke(Color.BLUE);
         arc3.setFill(null);
+        arc3.getStrokeDashArray().addAll(5.0,5.0);
 
         Group root = new Group(backgroundEllipse, arc1, arc2, arc3);        
         Scene scene = new Scene(root, 500, 300, Color.LIGHTYELLOW);

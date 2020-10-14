@@ -47,8 +47,8 @@ public class FahrenheitPane extends GridPane
         fahrenheit.setOnAction(this::processReturn);
         
         setAlignment(Pos.CENTER);
-        setHgap(20);
-        setVgap(10);
+        setHgap(200);
+        setVgap(70);
         setStyle("-fx-background-color: yellow");
         
         add(inputLabel, 0, 0);
@@ -63,6 +63,7 @@ public class FahrenheitPane extends GridPane
     //--------------------------------------------------------------------
     public void processReturn(ActionEvent event)
     {
+    	System.out.println(event.getSource());
         int fahrenheitTemp = Integer.parseInt(fahrenheit.getText());
         int celsiusTemp = (fahrenheitTemp - 32) * 5 / 9;
         result.setText(celsiusTemp + "");
