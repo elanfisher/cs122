@@ -29,11 +29,15 @@ public class FontDemo extends Application
                 FontPosture.ITALIC, 28);
         Font font3 = Font.font("Arial", FontPosture.ITALIC, 14);
         
+        Font font4 = Font.font("Javanese Text",20);
+        Font font5 = Font.font("Comic Sans MS",FontWeight.BOLD,16);
+        Font font6 = Font.font("Bookman Old Style",18);
+        
         Text text1 = new Text(30, 55, "Dream Big");
         text1.setFont(font1);
         text1.setUnderline(true);
         
-        Text text2 = new Text(150, 110, "Know thyself!");
+        Text text2 = new Text(160, 110, "Know thyself!"); //3 more + other text types
         text2.setFont(font2);
         text2.setFill(Color.GREEN);
         
@@ -41,10 +45,24 @@ public class FontDemo extends Application
             "between theory\nand practice, but in practice there is.");
         text3.setFont(font3);
         
-        Group root = new Group(text1, text2, text3);
+        Text text4 = new Text(100, 110, "Four 4"); //3 more + other text types
+        text4.setFont(font4);
+        text4.setFill(Color.GREEN);
+        
+        Text text5 = new Text(30, 110, "Five 5"); 
+        text5.setFont(font5);
+        text5.setFill(Color.BLUE);
+        
+        Text text6 = new Text(300, 50, "Six 6");
+        text6.setFont(font6);
+        text6.setFill(Color.RED);
+        
+        System.out.println(Font.getFamilies());
+        
+        Group root = new Group(text1, text2, text3, text4, text5, text6);
         Scene scene = new Scene(root, 400, 200, Color.LIGHTCYAN);
         
-        primaryStage.setTitle("Font Demo");
+        primaryStage.setTitle("Elan Font");
         primaryStage.setScene(scene);
         primaryStage.show();
     }
