@@ -17,7 +17,7 @@ import javafx.stage.Stage;
 
 public class RedOrBlue extends Application
 {
-    private Button redButton, blueButton;
+    private Button redButton, blueButton, greenButton;
     private FlowPane pane;
     
     //--------------------------------------------------------------------
@@ -32,14 +32,17 @@ public class RedOrBlue extends Application
         blueButton = new Button("Blue!");
         blueButton.setOnAction(this::processColorButton);
         
-        pane = new FlowPane(redButton, blueButton);
+        greenButton = new Button("Green!");
+        greenButton.setOnAction(this::processColorButton);
+        
+        pane = new FlowPane(redButton, blueButton, greenButton);
         pane.setAlignment(Pos.CENTER);
         pane.setHgap(20);
         pane.setStyle("-fx-background-color: white");
         
         Scene scene = new Scene(pane, 300, 100);
         
-        primaryStage.setTitle("Red or Blue?");
+        primaryStage.setTitle("Red, Blue, or Green?");
         primaryStage.setScene(scene);
         primaryStage.show();
     }
@@ -52,8 +55,13 @@ public class RedOrBlue extends Application
     {
         if (event.getSource() == redButton)
             pane.setStyle("-fx-background-color: crimson");
-        else
-            pane.setStyle("-fx-background-color: deepskyblue");            
+        else if(event.getSource() == greenButton) {
+        	pane.setStyle("-fx-background-color: green");
+        }
+        else {
+        	pane.setStyle("-fx-background-color: deepskyblue");
+        }
+                
     }
 
     public static void main(String[] args)
