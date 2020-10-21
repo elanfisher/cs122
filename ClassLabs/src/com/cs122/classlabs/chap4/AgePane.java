@@ -66,8 +66,8 @@ public class AgePane extends GridPane
         	
         	if(finalAge < 1900)
             {
+        		cent.setTextFill(Color.RED);
             	cent.setText("Good job! You lived over a century.");
-            
             }
             else
             {
