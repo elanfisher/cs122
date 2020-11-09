@@ -26,7 +26,7 @@ public class GridPaneDemo extends Application
         gridPane.setVgap(10);
    //   gridPane.setGridLinesVisible(true);
 
-        ImageView logo = new ImageView(new Image("mascot.png"));
+        ImageView logo = new ImageView(new Image("file:///C:/Users/Elan/Desktop/CS122%20N/elanfisher/ClassLabs/src/com/cs122/classlabs/apG/mascot.png"));
         gridPane.add(logo, 0, 0, 1, 3);
         
         Text title = new Text("Welcome to Emotiful!");
@@ -54,7 +54,10 @@ public class GridPaneDemo extends Application
         GridPane.setHalignment(greeting, HPos.CENTER);
         gridPane.add(greeting, 0, 3, 3, 1);
         
+        gridPane.setGridLinesVisible(false);
+        
         Scene scene = new Scene(gridPane, 550, 250);
+        
         
         primaryStage.setTitle("Grid Pane Demo");
         primaryStage.setScene(scene);

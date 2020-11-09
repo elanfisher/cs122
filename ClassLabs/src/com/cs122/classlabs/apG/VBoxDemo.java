@@ -10,7 +10,9 @@ import javafx.scene.control.RadioButton;
 import javafx.scene.control.Separator;
 import javafx.scene.layout.VBox;
 import javafx.scene.paint.Color;
+import javafx.scene.shape.Rectangle;
 import javafx.stage.Stage;
+import javafx.event.*;
 
 // Used only to generate screen shots for appendix.
 public class VBoxDemo extends Application
@@ -25,11 +27,25 @@ public class VBoxDemo extends Application
         Label colorLabel = new Label("Frame:");
         ColorPicker colorPicker = new ColorPicker(Color.ORANGE);
         
+        Rectangle rect = new Rectangle(350, 300, null);
+        rect.setStroke(colorPicker.getValue());
+        rect.setStrokeWidth(6);
+        
         VBox colorControls = new VBox(sepiaButton, monoButton, colorButton,
-            sep, colorLabel, colorPicker);
+            sep, colorLabel, colorPicker, rect);
         colorControls.setStyle("-fx-background-color: skyblue");
         colorControls.setPadding(new Insets(20, 10, 20, 10));
         colorControls.setSpacing(10);
+        
+        EventHandler<ActionEvent> event = new EventHandler<ActionEvent>() { 
+            public void handle(ActionEvent e) 
+            {  
+                Color c = colorPicker.getValue();  
+                rect.setStroke(colorPicker.getValue());
+            } 
+        }; 
+        
+        colorPicker.setOnAction(event);
         
         Scene scene = new Scene(colorControls, 600, 500);
         

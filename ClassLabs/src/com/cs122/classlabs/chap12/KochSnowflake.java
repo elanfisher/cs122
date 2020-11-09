@@ -35,12 +35,12 @@ public class KochSnowflake extends Application
     //--------------------------------------------------------------------
     public void start(Stage primaryStage)
     {
-        Image upImage = new Image("up.png");
+        Image upImage = new Image("file:///C:/Users/Elan/Desktop/CS122%20N/elanfisher/ClassLabs/src/com/cs122/classlabs/chap12/up.png");
         up = new Button();
         up.setGraphic(new ImageView(upImage));
         up.setOnAction(this::processUpButtonPress);
         
-        Image downImage = new Image("down.png");
+        Image downImage = new Image("file:///C:/Users/Elan/Desktop/CS122%20N/elanfisher/ClassLabs/src/com/cs122/classlabs/chap12/down.png");
         down = new Button();
         down.setGraphic(new ImageView(downImage));
         down.setOnAction(this::processDownButtonPress);

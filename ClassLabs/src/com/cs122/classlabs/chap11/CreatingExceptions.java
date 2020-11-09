@@ -27,14 +27,19 @@ public class CreatingExceptions
                 " and " + MAX + ", inclusive: ");
         int value = scan.nextInt();
 
+        
+        if (value < MIN || value > MAX)
+            throw problem;
+    
         //  Determine if the exception should be thrown
+        /*
         try {
         if (value < MIN || value > MAX)
             throw new OutOfRangeException("Error");}
         catch (Exception e){
         	System.out.println("yayyy I caught it!");
         }
-
+		*/
         System.out.println("End of main method.");  // may never reach
     }
 }

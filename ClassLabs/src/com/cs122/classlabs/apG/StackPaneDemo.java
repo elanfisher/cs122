@@ -16,7 +16,7 @@ public class StackPaneDemo extends Application
 {
     public void start(Stage primaryStage)
     {
-        ImageView imageView = new ImageView(new Image("tiger.jpg"));
+        ImageView imageView = new ImageView(new Image("file:///C:/Users/Elan/Desktop/CS122%20N/elanfisher/ClassLabs/src/com/cs122/classlabs/apG/tiger.jpg"));
         
         Rectangle rect = new Rectangle(350, 300, null);
         rect.setStroke(Color.ORANGE);

@@ -24,13 +24,13 @@ public class MapViewer extends Application
     //--------------------------------------------------------------------
     public void start(Stage primaryStage)
     {
-        Image img = new Image("map.jpg");
+        Image img = new Image("file:///C:/Users/Elan/Desktop/CS122%20N/elanfisher/ClassLabs/src/com/cs122/classlabs/chap11/tiger.jpg");
         ImageView imgView = new ImageView(img);
 
         ScrollPane root = new ScrollPane(imgView);
         root.setHbarPolicy(ScrollBarPolicy.ALWAYS);
         
-        Scene scene = new Scene(root, 600, 400);
+        Scene scene = new Scene(root, 100, 100);
         
         primaryStage.setTitle("Map Viewer");
         primaryStage.setScene(scene);

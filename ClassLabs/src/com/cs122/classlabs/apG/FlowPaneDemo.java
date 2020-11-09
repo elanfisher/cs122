@@ -21,7 +21,7 @@ public class FlowPaneDemo extends Application
 
         FlowPane pane = new FlowPane(b1, b2, b3, b4, b5);
         pane.setStyle("-fx-background-color: cyan");
-        pane.setAlignment(Pos.CENTER_LEFT);
+        pane.setAlignment(Pos.CENTER);
         pane.setHgap(10);
         pane.setVgap(5);
         

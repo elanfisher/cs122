@@ -31,7 +31,7 @@ public class BorderPaneDemo extends Application
         StackPane titlePane = new StackPane(title);
         titlePane.setStyle("-fx-padding: 20px; -fx-background-color: black");
         
-        ImageView imageView = new ImageView(new Image("tiger.jpg"));
+        ImageView imageView = new ImageView(new Image("file:///C:/Users/Elan/Desktop/CS122%20N/elanfisher/ClassLabs/src/com/cs122/classlabs/apG/mascot.png"));
         
         Rectangle rect = new Rectangle(350, 300, null);
         rect.setStroke(Color.ORANGE);
