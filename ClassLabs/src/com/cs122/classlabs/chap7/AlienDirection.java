@@ -27,7 +27,7 @@ public class AlienDirection extends Application
     //--------------------------------------------------------------------
     public void start(Stage primaryStage)
     {
-        Image alien = new Image("alien.png");
+        Image alien = new Image("file:///C:/Users/Elan/Desktop/CS122%20N/elanfisher/ClassLabs/src/com/cs122/classlabs/chap7/up.png");
         
         imageView = new ImageView(alien);
         imageView.setX(20);
@@ -51,16 +51,16 @@ public class AlienDirection extends Application
     {
         switch (event.getCode())
         {
-            case UP:
+            case W:
                 imageView.setY(imageView.getY() - JUMP);
                 break;
-            case DOWN:
+            case S:
                 imageView.setY(imageView.getY() + JUMP);
                 break;
-            case RIGHT:
+            case D:
                 imageView.setX(imageView.getX() + JUMP);
                 break;
-            case LEFT:
+            case A:
                 imageView.setX(imageView.getX() - JUMP);
                 break;
             default:
