@@ -27,7 +27,7 @@ public class Bullseye extends Application
         Circle ring = null;
         int radius = 150;        
         
-        for (int count = 1; count <= 8; count++)
+        for (int count = 1; count <= 80; count++)
         {
             ring = new Circle(160, 160, radius);
             ring.setFill(ringColor);
@@ -38,7 +38,7 @@ public class Bullseye extends Application
             else
                 ringColor = Color.BLACK;
             
-            radius = radius - 20;
+            radius = radius - 2;
         }
         
         ring.setFill(Color.RED);
