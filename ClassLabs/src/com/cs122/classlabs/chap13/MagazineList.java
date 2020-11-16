@@ -50,7 +50,7 @@ public class MagazineList
 
         while (current != null)
         {
-            result += current.magazine + "\n";
+            result += current.magazine + " -> ";
             current = current.next;
         }
 

@@ -25,4 +25,7 @@ public class MagazineRack
 
         System.out.println(rack); 
     }
+    /*
+     * 
+     */
 }
