@@ -20,7 +20,7 @@ public class Stacks
 	
 	public int peek() {
 		if(empty()) {
-			return -1;
+			return (Integer) null;
 		}
 		else {
 			return top.data;
@@ -29,7 +29,7 @@ public class Stacks
 	
 	public int pop() {
 		if(empty()) { //nothing there
-			return -1;
+			return (Integer) null;
 		}
 		else {			
 			Node temp = top.next;
