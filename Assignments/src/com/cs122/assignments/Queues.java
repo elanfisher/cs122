@@ -34,11 +34,6 @@ public class Queues
 			top = newNode;
 			rear = newNode;
 			count = 1;
-			/*
-			Node temp = rear;
-			top.link = newNode;
-			newNode.link = temp;
-			*/
 		}
 		else if(count == 1) {
 			System.out.println("one, adding: "+item);
@@ -66,6 +61,7 @@ public class Queues
 			Node temp = top.link;
 			top.link = null;
 			top = temp;
+			count--;
 		}
 	}
 	
